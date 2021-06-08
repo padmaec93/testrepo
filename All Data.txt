@@ -1,0 +1,68 @@
+Agile
+Swagger UI
+Automation Test Architect
+Selenium
+Java
+Rest Assured
+Maven
+TestNG
+POM, ApachePOI
+GitHub
+Jenkins
+JIRA
+
+
+git init
+git remote (remote url)
+git add A
+git config
+git commit
+git push - u origin master
+
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>3.1.5</version>
+</dependency>
+
+
+code:
+
+ExtentHtmlReporter reporter=new ExtentHtmlReporter("./Reports/learn_automation2.html");
+		
+ExtentReports extent = new ExtentReports();
+	    
+extent.attachReporter(reporter);
+	    
+ExtentTest logger=extent.createTest("LoginTest");
+
+String temp=Utility.getScreenshot(driver);
+			
+logger.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+
+@Before Suite
+@Before Class
+@Before Test
+@Before Method
+@Test
+@After Method
+@After Test
+@After Class
+@After Suite
+
+400 (Bad Request)
+401 (Unauthorized)
+404 (Not Found)
+
+
+200 (OK)
+201 (Created)
+202 (Accepted)- Request accepted for processing but processing not completed
+
+
+.given()
+.OAuth()
+.Oauth("Access Token")
+
+useRelaxedHTTPSValidation("TLS")
+RestAssured.given().contentype(ContentType.JSON).cookie("JSESSIONID",sessionID)
